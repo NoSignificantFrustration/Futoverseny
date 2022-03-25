@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text;
 
 namespace Futoverseny
@@ -21,7 +22,7 @@ namespace Futoverseny
             szuldatum = t[2];
             orszag = t[3];
             idoperc = double.Parse(t[4].Split(":")[0]);
-            idomasodperc = double.Parse(t[4].Split(":")[1]);
+            idomasodperc = double.Parse(t[4].Split(":")[1], CultureInfo.InvariantCulture);
         }
     }
 }

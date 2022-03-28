@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Futoverseny
 {
-    class Resztvevo
+    public class Resztvevo
     {
         public string rajtszam;
         public string nev;

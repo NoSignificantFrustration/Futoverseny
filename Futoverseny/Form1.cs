@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -68,6 +69,23 @@ namespace Futoverseny
             
 
             textBox4.Text = ((zeroTime + (TimeSpan)(DateTime.Now - szulTime)).Year - 1).ToString();
+        }
+
+        private void eredménylistaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            List<Resztvevo> rendezett = new List<Resztvevo>(resztvevok);
+            rendezett.Sort((a, b) => string.Concat(a.idoperc, a.idomasodperc).CompareTo(string.Concat(b.idoperc, b.idomasodperc)));
+
+            Form2 f2 = new Form2();
+
+            foreach (Resztvevo item in rendezett)
+            {
+                Debug.WriteLine(item.idoperc + " " + item.idomasodperc);
+            }
+
+            f2.SetLista(rendezett);
+
+            f2.Show();
         }
     }
 }

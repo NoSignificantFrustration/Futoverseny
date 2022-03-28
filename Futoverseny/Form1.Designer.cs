@@ -71,7 +71,7 @@ namespace Futoverseny
             // megnyitToolStripMenuItem
             // 
             this.megnyitToolStripMenuItem.Name = "megnyitToolStripMenuItem";
-            this.megnyitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.megnyitToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             this.megnyitToolStripMenuItem.Text = "Megnyit";
             this.megnyitToolStripMenuItem.Click += new System.EventHandler(this.megnyitToolStripMenuItem_Click);
             // 
@@ -80,6 +80,7 @@ namespace Futoverseny
             this.eredménylistaToolStripMenuItem.Name = "eredménylistaToolStripMenuItem";
             this.eredménylistaToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
             this.eredménylistaToolStripMenuItem.Text = "Eredménylista";
+            this.eredménylistaToolStripMenuItem.Click += new System.EventHandler(this.eredménylistaToolStripMenuItem_Click);
             // 
             // listBox1
             // 
